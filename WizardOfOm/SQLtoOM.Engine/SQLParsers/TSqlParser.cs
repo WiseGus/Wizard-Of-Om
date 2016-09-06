@@ -19,6 +19,7 @@ namespace SQLtoOM.Engine.SQLParsers {
                 if (!_GeneratedSqlOm.HasValue()) {
                     _GeneratedSqlOm = _gsQry.ToString();
                     _GeneratedSqlOm += AddSqlParametersText();
+                    _GeneratedSqlOm += AddExecuteText();
                 }
 
                 gsSelectQuery.ResetID();
@@ -78,11 +79,22 @@ namespace SQLtoOM.Engine.SQLParsers {
 
             StringBuilder sb = new StringBuilder();
             sb.AppendLine();
-            sb.AppendLine("//slQueryParameters sqlParams = new slQueryParameters();");
+            sb.AppendLine("// slQueryParameters sqlParams = new slQueryParameters();");
             foreach (gsParameter param in SqlParameters.Instance) {
-                sb.AppendFormat("//sqlParams.Add({0}, {1});", param.Name.Quoted(), param.AddQuotes ? param.Value.ToString().Quoted() : param.Value.ToString())
+                sb.AppendFormat("// sqlParams.Add({0}, {1});", param.Name.Quoted(), param.AddQuotes ? param.Value.ToString().Quoted() : param.Value.ToString())
                   .AppendLine();
             }
+
+            return sb.ToString();
+        }
+
+        private string AddExecuteText() {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine();
+            sb.AppendLine("// IslDataAccessDbProvider dataAccess = AppContext.ServiceLocator.GetService<IslDataAccessDbProvider>();");
+            sb.AppendLine("// string sql = slRendererFactory.GetRenderer(dataAccess.Info.DBProviderName).RenderSelect(qry);");
+            sb.AppendLine("// DataSet ds = dataAccess.ExecuteResultSet(sql, sqlParams, new[] { \"DATA\" });");
 
             return sb.ToString();
         }

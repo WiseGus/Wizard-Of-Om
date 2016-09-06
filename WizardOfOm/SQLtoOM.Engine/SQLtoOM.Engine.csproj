@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B03CD42-0B51-435A-B2A1-6F40A4A49558}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SQLtoOM.Engine</RootNamespace>
+    <AssemblyName>SQLtoOM.Engine</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.TransactSql.ScriptDom, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlOM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SqlOM.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compilers\ExecutronCompiler.cs" />
+    <Compile Include="gsQueryParsers\gsJoinClauseParser.cs" />
+    <Compile Include="gsQueryParsers\gsOrderByTermParser.cs" />
+    <Compile Include="gsQueryParsers\gsSelectQueryParser.cs" />
+    <Compile Include="gsQueryParsers\gsWhereClauseParser.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Models\gsBinaryColumn.cs" />
+    <Compile Include="Models\gsCaseColumn.cs" />
+    <Compile Include="Models\gsCaseTerm.cs" />
+    <Compile Include="Models\gsCoalesceColumn.cs" />
+    <Compile Include="Models\gsDateColumn.cs" />
+    <Compile Include="Models\gsFieldColumn.cs" />
+    <Compile Include="Models\gsFunctionColumn.cs" />
+    <Compile Include="Models\gsNullColumn.cs" />
+    <Compile Include="Models\gsNumberColumn.cs" />
+    <Compile Include="Models\gsParameter.cs" />
+    <Compile Include="Models\gsParameterColumn.cs" />
+    <Compile Include="Models\gsRawColumn.cs" />
+    <Compile Include="Models\gsStringColumn.cs" />
+    <Compile Include="Models\gsSubQueryColumn.cs" />
+    <Compile Include="Models\gsSubQueryFromTerm.cs" />
+    <Compile Include="Models\gsUnaryColumn.cs" />
+    <Compile Include="Models\gsWhereTermIn.cs" />
+    <Compile Include="Models\gsFromClause.cs" />
+    <Compile Include="Models\gsFromTerm.cs" />
+    <Compile Include="gsQueryParsers\gsFromTermParser.cs" />
+    <Compile Include="Models\gsGroupByTerm.cs" />
+    <Compile Include="gsQueryParsers\gsGroupByTermParser.cs" />
+    <Compile Include="Models\gsJoinClause.cs" />
+    <Compile Include="Models\gsOrderByTerm.cs" />
+    <Compile Include="Models\gsSelectColumn.cs" />
+    <Compile Include="Models\gsSelectQuery.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="gsQueryParsers\gsSelectColumnParser.cs" />
+    <Compile Include="Models\gsWhereClause.cs" />
+    <Compile Include="Models\gsWhereTermBase.cs" />
+    <Compile Include="Models\gsWhereTermBetween.cs" />
+    <Compile Include="Models\gsWhereTermCompare.cs" />
+    <Compile Include="Models\gsWhereTermExistsOrNotExists.cs" />
+    <Compile Include="Models\gsWhereTermExpression.cs" />
+    <Compile Include="Models\gsWhereTermIsNullOrNotNull.cs" />
+    <Compile Include="Compilers\ICompiler.cs" />
+    <Compile Include="SqlParameters.cs" />
+    <Compile Include="SQLParsers\ISQLParser.cs" />
+    <Compile Include="SQLParsers\TSqlParser.cs" />
+    <Compile Include="SqlOMEngine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Microsoft.SqlServer.TransactSql.ScriptDom.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlOM.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

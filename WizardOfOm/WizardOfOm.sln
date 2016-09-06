@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLtoOM.Engine", "SQLtoOM.Engine\SQLtoOM.Engine.csproj", "{2B03CD42-0B51-435A-B2A1-6F40A4A49558}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WizardOfOm", "SQLtoSQLOM\WizardOfOm.csproj", "{97985F61-0EB5-46FB-B222-1F44C2259319}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLtoSQLOMTests", "SQLtoSQLOMTests\SQLtoSQLOMTests.csproj", "{2BFE4ECE-5A48-4DB9-9E5B-053E2DE7C663}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B03CD42-0B51-435A-B2A1-6F40A4A49558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B03CD42-0B51-435A-B2A1-6F40A4A49558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B03CD42-0B51-435A-B2A1-6F40A4A49558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B03CD42-0B51-435A-B2A1-6F40A4A49558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97985F61-0EB5-46FB-B222-1F44C2259319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97985F61-0EB5-46FB-B222-1F44C2259319}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97985F61-0EB5-46FB-B222-1F44C2259319}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97985F61-0EB5-46FB-B222-1F44C2259319}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BFE4ECE-5A48-4DB9-9E5B-053E2DE7C663}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BFE4ECE-5A48-4DB9-9E5B-053E2DE7C663}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BFE4ECE-5A48-4DB9-9E5B-053E2DE7C663}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BFE4ECE-5A48-4DB9-9E5B-053E2DE7C663}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

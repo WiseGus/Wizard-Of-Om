@@ -1,0 +1,36 @@
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SqlOM.dll
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SQLtoSQLOMTests.dll
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SQLtoSQLOMTests.pdb
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SQLtoOM.Engine.dll
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SQLtoOM.Engine.pdb
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoSQLOMTests\obj\Debug\SQLtoSQLOMTests.csprojResolveAssemblyReference.cache
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoSQLOMTests\obj\Debug\SQLtoSQLOMTests.dll
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoSQLOMTests\obj\Debug\SQLtoSQLOMTests.pdb
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SqlOM.dll
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SQLtoSQLOMTests.dll
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SQLtoSQLOMTests.pdb
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SQLtoOM.Engine.dll
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SQLtoOM.Engine.pdb
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\obj\Debug\SQLtoSQLOMTests.csprojResolveAssemblyReference.cache
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\obj\Debug\SQLtoSQLOMTests.dll
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\obj\Debug\SQLtoSQLOMTests.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SqlOM.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SQLtoSQLOMTests.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SQLtoSQLOMTests.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SQLtoOM.Engine.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\bin\Debug\SQLtoOM.Engine.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\obj\Debug\SQLtoSQLOMTests.csprojResolveAssemblyReference.cache
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\obj\Debug\SQLtoSQLOMTests.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\obj\Debug\SQLtoSQLOMTests.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\bin\Debug\SqlOM.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\bin\Debug\SQLtoSQLOMTests.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\bin\Debug\SQLtoSQLOMTests.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\bin\Debug\SQLtoOM.Engine.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\bin\Debug\SQLtoOM.Engine.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\obj\Debug\SQLtoSQLOMTests.csprojResolveAssemblyReference.cache
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\obj\Debug\SQLtoSQLOMTests.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\obj\Debug\SQLtoSQLOMTests.pdb

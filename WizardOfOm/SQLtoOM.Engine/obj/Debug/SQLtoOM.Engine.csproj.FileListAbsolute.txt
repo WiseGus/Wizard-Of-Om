@@ -1,0 +1,27 @@
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoOM.Engine\bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoOM.Engine\bin\Debug\SqlOM.dll
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoOM.Engine\bin\Debug\SQLtoOM.Engine.dll
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoOM.Engine\bin\Debug\SQLtoOM.Engine.pdb
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.dll
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.pdb
+D:\Win10-Apps\Git\SqlToSqlOm\SQLtoSQLOM\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.csprojResolveAssemblyReference.cache
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoOM.Engine\bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoOM.Engine\bin\Debug\SqlOM.dll
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoOM.Engine\bin\Debug\SQLtoOM.Engine.dll
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoOM.Engine\bin\Debug\SQLtoOM.Engine.pdb
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.dll
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.pdb
+D:\darth\Documents\sqltosqlom\SQLtoSQLOM\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.csprojResolveAssemblyReference.cache
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoOM.Engine\bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoOM.Engine\bin\Debug\SqlOM.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoOM.Engine\bin\Debug\SQLtoOM.Engine.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoOM.Engine\bin\Debug\SQLtoOM.Engine.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoOM.Engine\bin\Debug\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoOM.Engine\bin\Debug\SqlOM.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoOM.Engine\bin\Debug\SQLtoOM.Engine.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoOM.Engine\bin\Debug\SQLtoOM.Engine.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.csprojResolveAssemblyReference.cache
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.pdb

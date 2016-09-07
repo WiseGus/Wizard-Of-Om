@@ -7,3 +7,12 @@ C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLt
 C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\obj\Release\SQLtoSQLOMTests.csprojResolveAssemblyReference.cache
 C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\obj\Release\SQLtoSQLOMTests.dll
 C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOMTests\obj\Release\SQLtoSQLOMTests.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\bin\Release\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\bin\Release\SqlOM.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\bin\Release\SQLtoSQLOMTests.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\bin\Release\SQLtoSQLOMTests.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\bin\Release\SQLtoOM.Engine.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\bin\Release\SQLtoOM.Engine.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\obj\Release\SQLtoSQLOMTests.csprojResolveAssemblyReference.cache
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\obj\Release\SQLtoSQLOMTests.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOMTests\obj\Release\SQLtoSQLOMTests.pdb

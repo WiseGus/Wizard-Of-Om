@@ -11,3 +11,16 @@ C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLt
 C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOM\obj\Release\WizardOfOm.csproj.GenerateResource.Cache
 C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOM\obj\Release\WizardOfOm.exe
 C:\Users\ksofos\Documents\Visual Studio 2015\Projects\sqltosqlom\SQLtoSQLOM\SQLtoSQLOM\obj\Release\WizardOfOm.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOM\bin\Release\WizardOfOm.exe.config
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOM\obj\Release\WizardOfOm.exe
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOM\obj\Release\WizardOfOm.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOM\bin\Release\Microsoft.SqlServer.TransactSql.ScriptDom.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOM\bin\Release\SqlOM.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOM\bin\Release\WizardOfOm.exe
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOM\bin\Release\WizardOfOm.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOM\bin\Release\SQLtoOM.Engine.dll
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOM\bin\Release\SQLtoOM.Engine.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOM\obj\Release\WizardOfOm.csprojResolveAssemblyReference.cache
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOM\obj\Release\WizardOfOm.MainF.resources
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOM\obj\Release\WizardOfOm.Properties.Resources.resources
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoSQLOM\obj\Release\WizardOfOm.csproj.GenerateResource.Cache

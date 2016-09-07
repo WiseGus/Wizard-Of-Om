@@ -762,6 +762,21 @@ namespace SQLtoSQLOMTests {
             Assert.AreEqual(sql, resSql, true);
         }
 
+
+        [TestMethod]
+        public void CF_NIAXOS_01() {
+
+            string sql = @"SELECT TRDS.GXPOSTALCODE Zip,
+                            COALESCE(TRDS.GXSTREET, '') + ' ' + COALESCE(TRDS.GXSTREETNUMBER, '') Address
+                            FROM GXCOMMERCIALENTRY CENT
+                            LEFT JOIN GXTRADERSITE TRDS ON TRDS.GXID = CENT.GXSHIPTOTRDSID
+                            WHERE TENT.GXID = @TENTID";
+            string resSql = GetSQL(sql);
+
+            AutoFixOutputSqlForCompare(ref sql, ref resSql);
+            Assert.AreEqual(sql, resSql, true);
+        }
+
         #region Helper methods
         private void AutoFixOutputSqlForCompare(ref string sql, ref string resSql) {
             RemoveParentheses(ref sql);

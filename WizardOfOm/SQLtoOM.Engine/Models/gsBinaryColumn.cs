@@ -68,6 +68,9 @@ namespace SQLtoOM.Engine.Models {
             else if (column is gsNumberColumn) {
                 return Convert.ToString(column.Value);
             }
+            else if (column is gsStringColumn) {
+                return "'" + Convert.ToString(column.Value) + "'";
+            }
             else if (column is gsUnaryColumn) {
                 if ((column as gsUnaryColumn).UnaryType == gsUnaryType.Negative) {
                     return "-" + Convert.ToString(column.Value);

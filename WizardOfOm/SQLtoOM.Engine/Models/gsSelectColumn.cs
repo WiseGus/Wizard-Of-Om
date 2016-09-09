@@ -20,8 +20,6 @@ namespace SQLtoOM.Engine.Models {
             _ID = 0;
         }
 
-        public override string ToString() {
-            throw new NotImplementedException($"Column type {GetType().Name} not supported");
-        }
+        public abstract override string ToString();
     }
 }

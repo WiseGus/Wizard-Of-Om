@@ -777,6 +777,18 @@ namespace SQLtoSQLOMTests {
             Assert.AreEqual(sql, resSql, true);
         }
 
+        [TestMethod]
+        public void CG_SELECT_HAVING_WITH_SUBQUERY() {
+            string sql = @"SELECT CMID
+	                        FROM CMEMAIL
+	                        GROUP BY CMID
+	                        HAVING (SELECT COUNT(1) col1 FROM CMEMAILATTACHMENT WHERE CMEMAILATTACHMENT.CMEMAILID = CMEMAIL.CMID) > 15";
+            string resSql = GetSQL(sql);
+
+            AutoFixOutputSqlForCompare(ref sql, ref resSql);
+            Assert.AreEqual(sql, resSql, true);
+        }
+
         #region Helper methods
         private void AutoFixOutputSqlForCompare(ref string sql, ref string resSql) {
             RemoveParentheses(ref sql);

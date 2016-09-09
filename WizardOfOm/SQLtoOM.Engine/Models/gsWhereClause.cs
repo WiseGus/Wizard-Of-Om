@@ -59,7 +59,13 @@ namespace SQLtoOM.Engine.Models {
                     }
                 }
 
-                sb.AppendLine($"{tmpWhereClauseName}.Terms.Add({whereTerm.ToString()});");
+                string whereTermStr = whereTerm.ToString();
+
+                if (whereTerm.InnerSqlOm.HasValue()) {
+                    sb.AppendLine(whereTerm.InnerSqlOm);
+                }
+
+                sb.AppendLine($"{tmpWhereClauseName}.Terms.Add({whereTermStr});");
             }
 
             foreach (gsWhereClause subClause in whereClause.SubClauses) {

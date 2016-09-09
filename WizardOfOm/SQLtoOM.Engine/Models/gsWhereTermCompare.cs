@@ -1,4 +1,7 @@
-﻿namespace SQLtoOM.Engine.Models {
+﻿using System;
+using System.Text;
+
+namespace SQLtoOM.Engine.Models {
 
     internal class gsWhereTermCompare : gsWhereTermBase {
 
@@ -10,10 +13,27 @@
             FirstExpression.ToStringUseExpression = true;
             SecondExpression.ToStringUseExpression = true;
 
-            string firstExpressionStr = FirstExpression.ToString();
-            string secondExpressionStr = SecondExpression.ToString();
+            string firstExpressionStr = ParseExpression(FirstExpression);
+            string secondExpressionStr = ParseExpression(SecondExpression);
 
             return $"WhereTerm.CreateCompare({firstExpressionStr}, {secondExpressionStr}, CompareOperator.{Operator.ToString()})";
+        }
+
+        private string ParseExpression(gsSelectColumn column) {
+            string expressionStr;
+            if (column is gsSubQueryColumn) {
+                var subQryColumn = column as gsSubQueryColumn;
+                subQryColumn.SubQuery.QryName = $"subQry{gsSelectQuery.GetNextID()}";
+
+                InnerSqlOm += Environment.NewLine + subQryColumn.SubQuery.ToString();
+
+                expressionStr = $"SqlExpression.SubQuery({subQryColumn.SubQuery.QryName})";
+            }
+            else {
+                expressionStr = column.ToString();
+            }
+
+            return expressionStr;
         }
     }
 }

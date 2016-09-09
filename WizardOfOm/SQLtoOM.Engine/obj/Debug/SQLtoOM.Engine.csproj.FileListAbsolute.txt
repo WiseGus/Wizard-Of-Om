@@ -22,6 +22,6 @@ C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQ
 C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoOM.Engine\bin\Debug\SqlOM.dll
 C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoOM.Engine\bin\Debug\SQLtoOM.Engine.dll
 C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoOM.Engine\bin\Debug\SQLtoOM.Engine.pdb
-C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.csprojResolveAssemblyReference.cache
 C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.dll
 C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.pdb
+C:\Users\ksofos\Documents\Visual Studio 2015\Projects\Wizard-Of-Om\WizardOfOm\SQLtoOM.Engine\obj\Debug\SQLtoOM.Engine.csprojResolveAssemblyReference.cache

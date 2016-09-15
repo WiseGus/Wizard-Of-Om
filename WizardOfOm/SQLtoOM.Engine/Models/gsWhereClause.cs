@@ -49,13 +49,15 @@ namespace SQLtoOM.Engine.Models {
                     var whereExists = whereTerm as gsWhereTermExistsOrNotExists;
 
                     sb.AppendLine(whereExists.Sql)
-                      .AppendLine($"string {whereExists.SqlName} = new Reeb.SqlOM.Render.SqlServerRenderer().RenderSelect({whereExists.QueryName});");
+                      .AppendLine($"string {whereExists.SqlName} = new Reeb.SqlOM.Render.SqlServerRenderer().RenderSelect({whereExists.QueryName});")
+                      .AppendLine("//TODO: Replace [new Reeb.SqlOM.Render.SqlServerRenderer()] from above line with [slSys.GetRenderer(AppContext)]");
                 }
                 else if (whereTerm is gsWhereTermIn) {
                     var whereIn = whereTerm as gsWhereTermIn;
                     if (!string.IsNullOrEmpty(whereIn.Sql)) {
                         sb.AppendLine((whereTerm as gsWhereTermIn).Sql)
-                          .AppendLine($"string {whereIn.SqlName} = new Reeb.SqlOM.Render.SqlServerRenderer().RenderSelect({whereIn.QueryName});");
+                          .AppendLine($"string {whereIn.SqlName} = new Reeb.SqlOM.Render.SqlServerRenderer().RenderSelect({whereIn.QueryName});")
+                          .AppendLine("//TODO: Replace [new Reeb.SqlOM.Render.SqlServerRenderer()] from above line with [slSys.GetRenderer(AppContext)]");
                     }
                 }
 

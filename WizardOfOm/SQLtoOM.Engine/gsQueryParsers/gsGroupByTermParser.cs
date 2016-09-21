@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.SqlServer.TransactSql.ScriptDom;
 using SQLtoOM.Engine.Models;
+using SQLtoOM.Engine.Factories;
 
 namespace SQLtoOM.Engine.gsQueryParsers {
 
@@ -22,7 +23,7 @@ namespace SQLtoOM.Engine.gsQueryParsers {
         internal gsGroupByTerm GetGroupByTerm(ExpressionGroupingSpecification groupingSpec) {
             gsGroupByTerm groupByTerm;
 
-            gsSelectColumn selCol = new gsSelectColumnParser().GetSelectColumn(groupingSpec.Expression, null);
+            gsSelectColumn selCol = gsScalarExpressionParserFactory.CreateParser(groupingSpec.Expression, null).Parse();
             groupByTerm = new gsGroupByTerm {
                 Field = selCol.ColumnName
             };

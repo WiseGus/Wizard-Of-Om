@@ -48,8 +48,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Compilers\ExecutronCompiler.cs" />
+    <Compile Include="Factories\gsColumnParserFactory.cs" />
+    <Compile Include="Factories\gsScalarExpressionParserFactory.cs" />
+    <Compile Include="gsQueryParsers\gsColumnParserBase.cs" />
+    <Compile Include="gsQueryParsers\gsColumnParserSelectScalar.cs" />
+    <Compile Include="gsQueryParsers\gsColumnParserSelectStar.cs" />
+    <Compile Include="gsQueryParsers\gsScalarExpressionParserBinary.cs" />
+    <Compile Include="gsQueryParsers\gsScalarExpressionParserCoalesce.cs" />
     <Compile Include="gsQueryParsers\gsJoinClauseParser.cs" />
     <Compile Include="gsQueryParsers\gsOrderByTermParser.cs" />
+    <Compile Include="gsQueryParsers\gsScalarExpressionParserBase.cs" />
+    <Compile Include="gsQueryParsers\gsScalarExpressionParserColumnReference.cs" />
+    <Compile Include="gsQueryParsers\gsScalarExpressionParserFunctionCall.cs" />
+    <Compile Include="gsQueryParsers\gsScalarExpressionParserLiteral.cs" />
+    <Compile Include="gsQueryParsers\gsScalarExpressionParserParenthesis.cs" />
+    <Compile Include="gsQueryParsers\gsScalarExpressionParserScalarSubquery.cs" />
+    <Compile Include="gsQueryParsers\gsScalarExpressionParserSearchedCase.cs" />
+    <Compile Include="gsQueryParsers\gsScalarExpressionParserUnary.cs" />
+    <Compile Include="gsQueryParsers\gsScalarExpressionParserVariableReference.cs" />
     <Compile Include="gsQueryParsers\gsSelectQueryParser.cs" />
     <Compile Include="gsQueryParsers\gsWhereClauseParser.cs" />
     <Compile Include="Enums.cs" />
@@ -80,7 +96,6 @@
     <Compile Include="Models\gsSelectColumn.cs" />
     <Compile Include="Models\gsSelectQuery.cs" />
     <Compile Include="Extensions.cs" />
-    <Compile Include="gsQueryParsers\gsSelectColumnParser.cs" />
     <Compile Include="Models\gsWhereClause.cs" />
     <Compile Include="Models\gsWhereTermBase.cs" />
     <Compile Include="Models\gsWhereTermBetween.cs" />

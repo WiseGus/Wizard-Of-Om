@@ -2,6 +2,7 @@
 using Microsoft.SqlServer.TransactSql.ScriptDom;
 using SQLtoOM.Engine.Models;
 using System.Collections.Generic;
+using SQLtoOM.Engine.Factories;
 
 namespace SQLtoOM.Engine.gsQueryParsers {
 
@@ -82,8 +83,8 @@ namespace SQLtoOM.Engine.gsQueryParsers {
             gsWhereTermCompare whereTerm = new gsWhereTermCompare();
 
             whereTerm.Operator = booleanComparisonExpression.ComparisonType.ToCompareOperator();
-            whereTerm.FirstExpression = new gsSelectColumnParser().GetSelectColumn(booleanComparisonExpression.FirstExpression, null);
-            whereTerm.SecondExpression = new gsSelectColumnParser().GetSelectColumn(booleanComparisonExpression.SecondExpression, null);
+            whereTerm.FirstExpression = gsScalarExpressionParserFactory.CreateParser(booleanComparisonExpression.FirstExpression, null).Parse();
+            whereTerm.SecondExpression = gsScalarExpressionParserFactory.CreateParser(booleanComparisonExpression.SecondExpression, null).Parse();
 
             return whereTerm;
         }
@@ -92,7 +93,7 @@ namespace SQLtoOM.Engine.gsQueryParsers {
             gsWhereTermIsNullOrNotNull whereTerm = new gsWhereTermIsNullOrNotNull();
 
             whereTerm.NullType = booleanIsNullExpression.IsNot ? gsNullOrNotNull.NotNull : gsNullOrNotNull.Null;
-            whereTerm.Expression = new gsSelectColumnParser().GetSelectColumn(booleanIsNullExpression.Expression, null);
+            whereTerm.Expression = gsScalarExpressionParserFactory.CreateParser(booleanIsNullExpression.Expression, null).Parse();
 
             return whereTerm;
         }
@@ -101,8 +102,8 @@ namespace SQLtoOM.Engine.gsQueryParsers {
             gsWhereTermCompare whereTerm = new gsWhereTermCompare();
 
             whereTerm.Operator = gsCompareOperator.Like;
-            whereTerm.FirstExpression = new gsSelectColumnParser().GetSelectColumn(likePredicate.FirstExpression, null);
-            whereTerm.SecondExpression = new gsSelectColumnParser().GetSelectColumn(likePredicate.SecondExpression, null);
+            whereTerm.FirstExpression = gsScalarExpressionParserFactory.CreateParser(likePredicate.FirstExpression, null).Parse();
+            whereTerm.SecondExpression = gsScalarExpressionParserFactory.CreateParser(likePredicate.SecondExpression, null).Parse();
 
             return whereTerm;
         }
@@ -132,12 +133,11 @@ namespace SQLtoOM.Engine.gsQueryParsers {
 
         internal gsWhereTermBase GetWhereTerm(InPredicate inPredicate, bool isNotIn) {
             gsWhereTermIn whereTerm = new gsWhereTermIn();
-            var columnParser = new gsSelectColumnParser();
             string subQryName = $"subQry{gsSelectQuery.GetNextID()}";
 
             whereTerm.InType = isNotIn ? gsInOrNotIn.NotIn : gsInOrNotIn.In;
 
-            whereTerm.Expression = columnParser.GetSelectColumn(inPredicate.Expression, null);
+            whereTerm.Expression = gsScalarExpressionParserFactory.CreateParser(inPredicate.Expression, null).Parse();
 
             if (inPredicate.Subquery != null) {
                 gsSelectQuery subQry = new gsSelectQuery();
@@ -154,7 +154,8 @@ namespace SQLtoOM.Engine.gsQueryParsers {
                 List<string> values = new List<string>();
 
                 foreach (ScalarExpression val in inPredicate.Values) {
-                    values.Add(Convert.ToString(columnParser.GetSelectColumn(val, null).Value));
+                    string valueStr = Convert.ToString(gsScalarExpressionParserFactory.CreateParser(val, null).Parse().Value);
+                    values.Add(valueStr);
                 }
 
                 whereTerm.values = values;

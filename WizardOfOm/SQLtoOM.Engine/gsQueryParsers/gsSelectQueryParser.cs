@@ -2,11 +2,12 @@
 using System.Linq;
 using Microsoft.SqlServer.TransactSql.ScriptDom;
 using SQLtoOM.Engine.Models;
+using SQLtoOM.Engine.Factories;
 
 namespace SQLtoOM.Engine.gsQueryParsers {
 
     internal class gsSelectQueryParser {
-        
+
         internal void ProcessQuerySpecification(QuerySpecification qrySpec, gsSelectQuery qry) {
             AddTop(qrySpec, qry);
             AddDistinct(qrySpec, qry);
@@ -39,7 +40,8 @@ namespace SQLtoOM.Engine.gsQueryParsers {
 
         private void AddColumns(QuerySpecification qrySpec, gsSelectQuery qry) {
             foreach (var selectElement in qrySpec.SelectElements) {
-                gsSelectColumn selCol = new gsSelectColumnParser().GetSelectColumn(selectElement);
+                gsColumnParserBase colParser = gsColumnParserFactory.CreateParser(selectElement);
+                gsSelectColumn selCol = colParser.Parse();
                 qry.Columns.Add(selCol);
             }
         }

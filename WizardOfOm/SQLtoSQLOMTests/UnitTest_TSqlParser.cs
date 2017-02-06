@@ -762,6 +762,19 @@ namespace SQLtoSQLOMTests {
             Assert.AreEqual(sql, resSql, true);
         }
 
+        [TestMethod]
+        public void CF_CASE01() {
+            string sql = @"SELECT 
+                            CASE WHEN CMLOYALTYTRANSLINES.AAA IS NOT NULL 
+                            THEN CMLOYALTYTRANSLINES.AAA
+		                    ELSE CMLOYALTYTRANSLINES.BBB END 
+                            ITEMDESCR 
+                            FROM CMLOYALTYTRANSLINES";
+            string resSql = GetSQL(sql);
+
+            AutoFixOutputSqlForCompare(ref sql, ref resSql);
+            Assert.AreEqual(sql, resSql, true);
+        }
 
         [TestMethod]
         public void CF_NIAXOS_01() {

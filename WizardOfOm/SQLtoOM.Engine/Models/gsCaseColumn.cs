@@ -53,7 +53,13 @@ namespace SQLtoOM.Engine.Models {
             if (caseColumn.Else.ColumnIsValid()) {
                 caseColumn.CaseAlias = caseColumn.Else.ColumnAlias;
                 caseColumn.Else.ColumnAlias = null; // Messes up the case ElseValue
-                sb.AppendLine($"{caseColumn.CaseClauseName}.ElseValue = {caseColumn.Else.ToString()};");
+
+                string tempElseStr = caseColumn.Else.ToString();
+                if (!tempElseStr.StartsWith("SqlExpression.")) {
+                    tempElseStr = $"SqlExpression.Field({tempElseStr});";
+                }
+
+                sb.AppendLine($"{caseColumn.CaseClauseName}.ElseValue = {tempElseStr};");
             }
         }
     }
